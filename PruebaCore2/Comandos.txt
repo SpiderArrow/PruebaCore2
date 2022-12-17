@@ -1,0 +1,8 @@
+﻿
+AGREGAR UN MODELO DESDE LA BD DE UNA TABLA
+Scaffold-DbContext 
+"Server=JARVIS\SQLEXPRESS;Initial Catalog=SaleAdmin;Trusted_Connection=True;Trust Server Certificate=true" 
+Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Tables "Clientes" -ContextDir Models -Context ModelContext
+
+Nota:
+agregar una carpeta tmp para agregar el ModelContext o dar permisos de sobreescritura (investigar como hacerlo)
